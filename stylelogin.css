@@ -1,0 +1,57 @@
+#body{
+    background-image: url('All Images/welcome background image1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: relative;
+}
+#welcomediv{
+    margin-left: 60%;
+    
+}
+#greetings{
+    color:rgb(145, 26, 26);
+    text-shadow: 0 0 3px #000;
+}
+#login_btn{
+    border-radius: 5px;
+    background-color: rgb(255, 229, 191);
+    color: rgb(145, 26, 26);
+}
+.cancle{
+    margin-left: 85%;
+    margin-top: 10px;
+}
+.form{
+    display: none;
+    margin-top: 100px;
+    border: 5px solid;
+    height: auto;
+    width: fit-content;
+    border-radius: 10%;
+    background-color: rgb(255, 229, 191);
+    color: rgb(145, 26, 26);
+    transition: all 3s ease-out;
+}
+.input_box{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 20px;
+}
+.monkey{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#Remember{
+    margin-right: 50px;
+}
+.forgot_pw{
+    float: right;
+}
+.button{
+    color:  rgb(255, 255, 255);
+    background-color: rgb(145, 26, 26);
+    border-radius: 5px;
+}

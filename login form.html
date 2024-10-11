@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>login form</title>
+    <link rel="stylesheet" type="text/css" href="stylelogin.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <!-- <script src="scriptlogin.js"> -->
+    <script src="scripthome.js"></script>
+    </script>
+</head>
+
+<body id="body">
+    <div id="container">
+        <div id="welcomediv" align="center">
+            <h1 id="greetings" align="center">Welcome to Shopee</h1>
+            <button type="btn" value="showform" id="login_btn" ">Login Here</button>
+    </div>
+    <div align=" center">
+                <form name="f1" class="form" id="login" method="post">
+                    <div class="cancle">❌</div>
+                    <div align="center">
+                        <h2 id="loginform">Login</h2>
+                        <div class="input_box">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" autocomplete="on"
+                                placeholder="Enter Your Username Here" required>
+                        </div>
+                        <br><br>
+                        <div class="input_box">
+                            <label for="password1">Password
+                                <span class="smonkey" id="showm1">🙈</span>
+                                <span class="monkey" id="hidem1">🐵</span>
+                            </label>
+                            <input type="password" name="passwordA" class="password1" autocomplete="on" id="password1"
+                                placeholder="Enter Your Valid Password" required>
+                        </div>
+                        <br>
+                        <div class="option_field">
+                            <span id="Remember">
+                                <input type="checkbox" id="check" />
+                                <lebel for="check"> Remember Me</lebel>
+                            </span>
+                            <a href="#" class="forgot_pw">Forgot Password?</a>
+                        </div>
+                        <br>
+                        <input type="button" class="button" name="lgn_login" id="lgn_login" autocomplete="on"
+                            value="login" onclick="validate();">
+
+                        <div class="login_signup">
+                            Don't have an account? <a href="#" id="signup_btn">Signup</a></div>
+                    </div>
+                    <p id="err_msg"></p>
+                </form>
+        </div>
+        <div align="center">
+            <div>
+                <form name="f2" class="form" id="signup" method="post">
+                    <div class="cancle">❌</div>
+                    <div align="center">
+                        <h2>Signup</h2>
+                        <div class="input_box">
+                            <label for="userentered">Create Username
+                            </label>
+                            <input type="email" name="userentered" class="userentered" autocomplete="on"
+                                id="userentered" placeholder="Enter Your Username Here" required />
+                        </div>
+                        <br><br>
+                        <div class="input_box">
+                            <label for="password2">Create Password
+                                <span class="smonkey" id="showm2">🙈</span>
+                                <span class="monkey" id="hidem2">🐵</span>
+
+                            </label>
+                            <input type="password" name="passwordB" class="password" autocomplete="on" id="password2"
+                                placeholder="Create Password" required />
+                        </div>
+                        <br><br>
+                        <div class="input_box">
+                            <label for="password3">Confirm Password
+                                <span class="smonkey" id="showm3">🙈</span>
+                                <span class="monkey" id="hidem3">🐵</span>
+                            </label>
+                            <input type="password" name="passentered" class="password" autocomplete="on" id="password3"
+                                placeholder="Confrim Password" required />
+                        </div>
+                        <br>
+                        <input type="button" class="button" name="sgn_button" id="sgn_button" autocomplete="on"
+                            value="SignUp" onclick="saveValue()">
+                        <br><br>
+                        <div class="login_signup">Already have an account? <a href="#" id="loginformshow_btn">Login</a>
+                        </div>
+                    </div>
+                    <p id="err1_msg"></p>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
