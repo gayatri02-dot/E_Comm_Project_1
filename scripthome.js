@@ -3,14 +3,17 @@ $(document).ready(function () {
 
     $('#home').click(function () {
         window.location.href = "homepage.html"
-        
+
     })
     $('#category').click(function () {
         window.location.href = "category page.html"
     })
-    $('#account').click(function(){
+    $('#account').click(function () {
         window.location.href = "your account.html"
         saywelcome();
+    })
+    $('#cart').click(function(){
+        window.location.href = "cart.html";
     })
     $('.category').mouseenter(function () {
         $('.category').css('cursor', 'pointer')
@@ -18,36 +21,36 @@ $(document).ready(function () {
     $('.navelement').mouseenter(function () {
         $('.navelement').css('cursor', 'pointer')
     })
-    $('.backbtn').click(function(){
+    $('.backbtn').click(function () {
         window.location.href = "category page.html"
     })
-    $('.backbtn').mouseenter(function(){
+    $('.backbtn').mouseenter(function () {
         $('.backbtn').css('cursor', 'pointer')
     })
-        $('#category1').click(function () {
-            window.location.href = "itemstop1.html"
-        })
-        $('#category4').click(function () {
-            window.location.href = "itemsdress.html"
-        })
-        $('#category3').click(function () {
-            window.location.href = "itemsskirts.html"
-        })
-        $('#category2').click(function () {
-            window.location.href = "itemtshirt.html"
-        })
-        $('#category6').click(function () {
-            window.location.href = "itemsshoes.html"
-        })
-        $('#category5').click(function () {
-            window.location.href = "itemsandels.html"
-        })
-        $('#category7').click(function () {
-            window.location.href = "itmebags.html"
-        })
-        $('#category8').click(function () {
-            window.location.href = "itemsassesory.html"
-        })
+    $('#category1').click(function () {
+        window.location.href = "itemstop1.html"
+    })
+    $('#category4').click(function () {
+        window.location.href = "itemsdress.html"
+    })
+    $('#category3').click(function () {
+        window.location.href = "itemsskirts.html"
+    })
+    $('#category2').click(function () {
+        window.location.href = "itemtshirt.html"
+    })
+    $('#category6').click(function () {
+        window.location.href = "itemsshoes.html"
+    })
+    $('#category5').click(function () {
+        window.location.href = "itemsandels.html"
+    })
+    $('#category7').click(function () {
+        window.location.href = "itmebags.html"
+    })
+    $('#category8').click(function () {
+        window.location.href = "itemsassesory.html"
+    })
 
     $('#login_btn').click(function () {
         $('#login').show()
@@ -97,11 +100,35 @@ $(document).ready(function () {
         $('#showm3').show();
         $('#hidem3').hide();
     })
+    for (let i = 1; i <= 8; i++) {
+        var price = parseFloat($(`.p${i}`).text());
+        var discountPercentage = parseFloat($(`.dis${i}`).text());
+        var discountedPrice = price / (discountPercentage / 100);
+        $(`.dp${i}`).text(discountedPrice.toFixed(2));
+    }
+    for (let i = 1; i <= 8; i++) {
+        $(`#wish${i}`).click(function () {
+            {
+                $(`#w${i}`).hide();
+                $(`#r${i}`).show();
+            }
+        })
+    }
+    for (let i = 1; i <= 8; i++) {
+        $(`#cart${i}`).click(function () {
+            {
+                $(`#ba${i}`).hide();
+                $(`#ad${i}`).show();
+                $(`#citem${i}`).append(`#data-itemdiv${i}`);
+            }
+        })
+    }
 })
-function saywelcome(){
-    var x=document.f1.username.value;
-    document.getElementById('acholdername').innerHTML =  " "+x;
-    
+
+function saywelcome() {
+    var x = document.f1.username.value;
+    document.getElementById('acholdername').innerHTML = " " + x;
+
 }
 function saveValue() {
     const inputuser = document.getElementsByName('userentered')[0].value;
@@ -137,123 +164,11 @@ function validate() {
         document.getElementById("err_msg").innerHTML = "Userid and Password is incorrect!!!!"
     }
 }
-// afterloadscript();
 
-// function startInterval() {
-//     let isrunning = false;
-// let homeinterval;
-//     if (!isrunning) {
-//         homeinterval = setInterval(loadhome(), 500);
-//         isrunning = true;
-//     }
-// }
-// function stopInterval() {
-//     let isrunning = false;
-// let homeinterval;
-//     clearInterval(homeinterval); // Stop the repeating action
-//     isrunning = false;
-// }
-// function loadhome() {
-//     fetch('homepage.html')
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById("container").innerHTML = data;
-//         })
-//         // .then(data=>{
-//         //     document.getElementById("menubardiv").hide = data;
-//         // }
-            
-        
-            
-        
-//     document.body.style.backgroundImage = "url('All Images/homebg.jpeg')";
-// }
-// function loadcategory() {
-//     fetch('category page.html')
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById("container").innerHTML = data;
-//             afterloadscript();
-//         })
-//     document.body.style.backgroundImage = "url('All Images/background\ clooting\ 5.jpg')";
-// }
 
-// function loaditemtop() {
-//     fetch('itemstop1.html')
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById('container').innerHTML = data;
-//         })
-//     document.body.style.backgroundImage = "url('All Images/background\ item.avif')";
 
-// }
 
-// function loaditemdress() {
-//     fetch('itemsdress.html')
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById('categorydiv').innerHTML = data;
-//         })
-//     document.body.style.backgroundImage = "url('All Images/background\ item.avif')";
 
-// }
 
-// function loaditemskirt() {
-//     fetch('itemsskirts.html')
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById('categorydiv').innerHTML = data;
-//         })
-//     document.body.style.backgroundImage = "url('All Images/background\ item.avif')";
 
-// }
 
-// function loaditemtshirt() {
-//     fetch('itemtshirt.html')
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById('categorydiv').innerHTML = data;
-//         })
-//     document.body.style.backgroundImage = "url('All Images/background\ item.avif')";
-
-// }
-
-// function loaditemshoe() {
-//     fetch('itemsshoes.html')
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById('categorydiv').innerHTML = data;
-//         })
-//     document.body.style.backgroundImage = "url('All Images/background\ item.avif')";
-
-// }
-
-// function loaditemsandel() {
-//     fetch('itemsandels.html')
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById('categorydiv').innerHTML = data;
-//         })
-//     document.body.style.backgroundImage = "url('All Images/background\ item.avif')";
-
-// }
-
-// function loaditembag() {
-//     fetch('itmebags.html')
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById('categorydiv').innerHTML = data;
-//         })
-//     document.body.style.backgroundImage = "url('All Images/background\ item.avif')";
-
-// }
-
-// function loaditemacce() {
-//     fetch('itemsassesory.html')
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById('categorydiv').innerHTML = data;
-//         })
-//     document.body.style.backgroundImage = "url('All Images/background\ item.avif')";
-
-// }
