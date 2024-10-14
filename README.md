@@ -15,3 +15,7 @@ if these matches then and then only you can sees next page.
 in sign up form here i have also added those monkey sign for password security
 
 
+I added home page in the project. html file and css file, in this after login to your account with matching userid and password you will see the home page 
+and in home page at the top there is a nav bar having logo , home icon, category icon, wishlist icon, cart icon and account icon
+in home i arrenge season wise cloths.
+like winter, summer and mansoon cloths.
