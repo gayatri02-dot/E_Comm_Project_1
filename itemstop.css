@@ -1,0 +1,154 @@
+.wishdiv{
+    display: none;
+    margin-right: 1.5%;
+    width: 27%;
+    height: 1000px;
+    float: right;
+    background-color: rgba(255, 203, 203, 0.637);
+    border: 1px solid;
+    border-radius: 25px;
+}
+#wishhead{
+    align-content: center;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Lucida Handwriting';
+    color: rgba(129, 0, 0, 0.842);
+    height: 30px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
+.wishitem{
+    height: 50px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+    border: 1px solid;
+}
+#itembody{
+    background-image: url("All Images/background\ item.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
+}
+.backbtn{
+    padding-block: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border: rgb(103, 74, 130) solid;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 10px;
+    background: transparent;
+    font-weight: bold;
+    font-style: oblique;
+}
+.backbtn:hover{
+    box-shadow: 2px 2px 2px 1px black;
+    /* transform: translate3d(1.2px,1.2px,1.5px); */
+    transition: transform 0.5s ease-out;
+}
+.itemss{
+    height: 300px;
+    width: 18%;
+    border: 2px solid;
+    float: left;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.itemimg{
+    height: 220px;
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(224, 224, 222);
+    border-radius: 8px;
+}
+.imgtag{
+    height: 160px;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    align-self: center;
+}
+.price{
+    display: flex;
+    height: 35px;
+    margin-top: 5px;
+}
+.mainprice{
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 30px;
+    margin-top: 2.5px;
+    width: 30%;
+    margin-left: 3%;
+}
+.disprice{
+    color: gray;
+    align-content:center;
+    font-size: small;
+    text-decoration-line: line-through;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: right;
+    height: 30px;
+    margin-top: 2.5px;
+    margin-left: 3%;
+    width: 28%;
+}
+.discount{
+    align-content:center;
+    font-size: x-small;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 30px;
+    margin-top: 2.5px;
+    margin-left: 3%;
+    width: 32%
+}
+.base{
+    margin-top: 15px;
+    background-color: rgb(240, 224, 227);
+    height: 50px;
+}
+.wishlist{
+    height: 30px;
+    width: 30%;
+    align-content: center;
+    text-align: center;
+    display: inline-block;
+    margin-left: 5%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.wishlist:hover{
+    background-color: rgb(150, 102, 102);
+    border: 1px rgb(59, 41, 44) solid;
+    cursor: pointer;
+}
+.cart{
+    float: right; 
+    height: 30px;
+    width: 40%;
+    align-content: center;
+    text-align: center;
+    display: inline-block;
+    margin-right: 5%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.rheart{
+    display: none;
+}
+.ad{
+    display: none;
+}
+.cart:hover{
+    background-color: rgb(150, 102, 102);
+    border: 1px rgb(59, 41, 44) solid;
+    cursor: pointer;
+}
