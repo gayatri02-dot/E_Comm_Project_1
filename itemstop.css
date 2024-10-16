@@ -1,31 +1,3 @@
-.wishdiv{
-    display: none;
-    margin-right: 1.5%;
-    width: 27%;
-    height: 1000px;
-    float: right;
-    background-color: rgba(255, 203, 203, 0.637);
-    border: 1px solid;
-    border-radius: 25px;
-}
-#wishhead{
-    align-content: center;
-    text-align: center;
-    font-size: x-large;
-    font-family: 'Lucida Handwriting';
-    color: rgba(129, 0, 0, 0.842);
-    height: 30px;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 10px;
-}
-.wishitem{
-    height: 50px;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 10px;
-    border: 1px solid;
-}
 #itembody{
     background-image: url("All Images/background\ item.avif");
     background-repeat: no-repeat;
@@ -136,7 +108,6 @@
     width: 40%;
     align-content: center;
     text-align: center;
-    display: inline-block;
     margin-right: 5%;
     margin-top: 10px;
     border-radius: 10px;
