@@ -1,3 +1,29 @@
+#cartbody{
+    background-image: url("All Images/background\ cart.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: relative;
+}
+#cartdiv{
+    margin-top: 20px;
+    width: 50%;
+    height: 1000px;
+    margin-left: 25%;
+    background-color: rgba(255, 203, 203, 0.637);
+    border: 1px solid;
+    border-radius: 25px;
+}
+#carthead{
+    align-content: center;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Lucida Handwriting';
+    color: rgba(129, 0, 0, 0.842);
+    height: 30px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10px;
+}
 #itembody{
     background-image: url("All Images/background\ item.avif");
     background-repeat: no-repeat;

@@ -9,7 +9,7 @@ $(document).ready(function () {
         window.location.href = "category page.html"
     })
     $('#account').click(function () {
-        window.location.href = "your account.html"
+        window.location.href = "login form.html"
         saywelcome();
     })
     $('#cart').click(function(){
@@ -114,12 +114,15 @@ $(document).ready(function () {
             }
         })
     }
+    count=0;
     for (let i = 1; i <= 8; i++) {
         $(`#cart${i}`).click(function () {
             {
                 $(`#ba${i}`).hide();
                 $(`#ad${i}`).show();
-                $(`#citem${i}`).append(`#data-itemdiv${i}`);
+                count++;
+        $('#titem').innerHTML=`${count}`;
+        $('#tval')=gettotal();
             }
         })
     }
@@ -165,7 +168,15 @@ function validate() {
     }
 }
 
+let totalvalue=0;
 
+function gettotal(){
+    for(i=1; i<=8; i++){
+        var price = parseFloat($(`.p${i}`).text());
+        totalvalue=totalvalue+price;
+    }
+    return totalvalue;
+}
 
 
 
